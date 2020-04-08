@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
 
         btnStartSecondActivity.setOnClickListener {
             val message = etUserMessage.text.toString()
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
             val myIntent = Intent(this, SecondActivity::class.java)
+            myIntent.putExtra("userMsg", message)
             startActivity(myIntent)
         }
     }
