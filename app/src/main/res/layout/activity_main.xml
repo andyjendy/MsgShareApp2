@@ -34,4 +34,22 @@
         android:layout_marginTop="76dp"
         android:text="Send Data do drugiej aktywnosci" />
 
+    <Button
+        android:id="@+id/btnShareToApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartSecondActivity"
+        android:layout_marginTop="36dp"
+        android:text="Share do innej aplikacji" />
+
+    <Button
+        android:id="@+id/btnRecyclerViewDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnShareToApp"
+        android:layout_marginTop="98dp"
+        android:text="Recycler View Demo"
+        android:shadowColor="#BC0000"
+        android:textColor="#FFFFFF"/>
+
 </RelativeLayout>

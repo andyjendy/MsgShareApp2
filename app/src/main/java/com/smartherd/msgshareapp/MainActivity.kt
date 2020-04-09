@@ -27,6 +27,24 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("userMsg", message)
             startActivity(myIntent)
         }
+
+        btnShareToApp.setOnClickListener {
+            val message = etUserMessage.text.toString()
+
+            val myIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, message)
+                type = "text/plain"
+            }
+
+
+            startActivity(Intent.createChooser(myIntent, "Share to"))
+
+        }
+
+        btnRecyclerViewDemo.setOnClickListener {
+
+        }
     }
 
 }
