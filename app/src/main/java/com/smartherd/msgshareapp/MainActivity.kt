@@ -43,7 +43,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnRecyclerViewDemo.setOnClickListener {
-
+            val myIntent = Intent(this, HobbiesActivity::class.java)
+            startActivity(myIntent)
         }
     }
 
